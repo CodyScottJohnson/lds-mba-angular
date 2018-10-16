@@ -1,0 +1,46 @@
+@import "variables";
+@import "fonts";
+.contact {
+    .contact-card {
+        width: 100%;
+        padding: 10px;
+        height: 100%; // background: blue;
+        mat-card {
+            border-radius: 10px;
+            overflow: hidden;
+            padding-top: 80px;
+            mat-card-content {
+                @extend .Font_Body;
+                font-size:17px;
+                min-height: 100px;
+            }
+            mat-card-header {
+                @extend .Font_Body;
+                position: absolute;
+                font-weight: bolder;
+                font-size: 20px;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 15px 40px 15px 40px;
+                text-align: center;
+                border-bottom: 1px solid $u-red;
+                mat-card-header-text{
+                    width:100%;
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    text-align: center;
+                }
+            }
+        }
+        mat-card-actions {
+            text-align: center;
+            margin-bottom: 5px;
+            .mat-stroked-button{
+                border-color: $u-red;
+                color:$u-red;
+            }
+        }
+    }
+}

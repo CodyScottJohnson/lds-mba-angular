@@ -1,0 +1,94 @@
+@import 'fonts';
+@import 'mixins';
+.nav-header{
+    margin:0;
+    top:0;
+    height:80px;
+    width:100%;
+    padding:20px 25px 20px 25px;
+    background: white;
+    border-bottom: 3px solid #CC0000;
+    position:fixed;
+    z-index:9;
+    img{
+        height:100%;
+    }
+
+}
+.join-now{
+    @extend .Font_Body;
+    @extend .center.horizontal;
+    position:fixed;
+    padding:5px 20px 5px 20px;
+    background: #CC0000;
+    color:white;
+    font-size:1.3em;
+    border-radius:25px;
+    bottom:15px;
+
+}
+.content{
+    background: green;
+    height:100%;
+    width:100%;
+}
+.nav-toggle{
+    @extend .center.vertical;
+    right:20px;
+    fa-icon{
+        color:#CC0000;
+        font-size:20px;
+        
+    }
+}
+.side-nav{
+    width:50%;
+    max-width:400px;
+    min-width:300px;
+    .logo{
+        width:100%;
+        padding:40px;
+        position: relative;
+        display: block;
+        text-align: center;
+        img{
+            width:100%;
+            max-width:120px;
+        }
+    }
+}
+.main{
+    padding-top:80px;
+    .section-title{
+        span{
+        @extend .Font_Body;
+        font-size:40px;
+        color:#CC0000;
+        text-transform: uppercase;
+        padding-left:10px;
+        }
+        .line{
+            width:60px;
+            border-bottom:4px solid #CC0000;
+        }
+    }
+}
+.banner{
+    background-color: #CC0000;
+    background-image: url('/assets/img/school.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:500px;
+    max-height: calc(100vh - 80px);
+    width:100%;
+    position: relative;
+    display: block;
+    .mask{
+        height:100%;
+        width:100%;
+        position: absolute;
+        top:0;
+        left:0;
+        background: rgba(white,.8);
+    }
+}

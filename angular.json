@@ -12,6 +12,7 @@
         "@schematics/angular:component": {
           "styleext": "scss"
         }
+      
       },
       "architect": {
         "build": {
@@ -27,8 +28,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/normalize.css/normalize.css"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/scss/"
+              ]
+            },
             "scripts": []
           },
           "configurations": {

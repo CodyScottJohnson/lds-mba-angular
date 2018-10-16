@@ -1,0 +1,63 @@
+
+
+<div class="container" fxLayoutGap="10px" fxLayout="row wrap"  fxFlex="100" fxLayoutAlign="space-around center">
+  
+  <div  class="contact"  fxFlex="32" fxFlex.xs="100" fxLayoutAlign="space-around center">
+      <div class="contact-card">
+          <mat-card class="example-card">
+              <mat-card-header class="mat-elevation-z1">
+                I Want To Be A Part of This!
+              </mat-card-header>
+             <mat-card-content>
+                <p>
+                 Join
+                </p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button (click)="openDialog()" mat-stroked-button class="mat-elevation-z1">Join Now</button>
+
+              </mat-card-actions>
+            </mat-card>
+      </div>
+
+    </div>
+    <div class="contact"  fxFlex="32" fxFlex.xs="100"  fxLayoutAlign="space-around center">
+        <div class="contact-card">
+            <mat-card class="example-card">
+                <mat-card-header  class="mat-elevation-z1">
+                 Lets Talk!
+                </mat-card-header>
+               <mat-card-content>
+                  <p>
+                    Do you have any questions, ideas for the club, or just feel like having a chat? We'd love to talk to you!
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button (click)="openChat()" mat-stroked-button class="mat-elevation-z1">Contact Us</button>
+  
+                </mat-card-actions>
+              </mat-card>
+        </div>
+      
+      </div>
+      <div class="contact" fxFlex="32" fxFlex.xs="100"  fxLayoutAlign="space-around center">
+          <div class="contact-card">
+              <mat-card class="example-card">
+                  <mat-card-header  class="mat-elevation-z1">
+                    I'll Just Listen
+                  
+                  </mat-card-header>
+                 <mat-card-content>
+                    <p>
+                        Not ready to get involved just yet, go ahead and subscribe and we'll do our best to keep you up-to-date about any important goings on.
+                    </p>
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <button (click)="openSubscribe()" mat-stroked-button class="mat-elevation-z1">Subscribe</button>
+    
+                  </mat-card-actions>
+                </mat-card>
+          </div>
+         
+        </div>
+</div>

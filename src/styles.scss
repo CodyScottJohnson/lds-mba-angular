@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://use.typekit.net/bpb3mgm.css");
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import 'mixins';
+.Font_Body{
+font-family: myriad-pro-condensed, sans-serif;
+font-style: normal;
+font-weight: 900;
+}
+body,html{
+    height:100%;
+    width:100%;
+}
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+.mat-dialog-container{
+    width: 100%!important;
+    max-width:500px;
+    padding:0!important;
+
+}

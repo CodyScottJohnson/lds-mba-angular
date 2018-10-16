@@ -1,0 +1,24 @@
+.center {
+    &.vertical {
+      position: absolute;
+      top: 50%;
+      transform: translate(0,-50%);
+      -webkit-transform: translate(0,-50%);
+    }
+  
+    &.horizontal {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      -webkit-transform: translate(-50%, 0);
+    }
+  
+    &.both {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+    }
+  }
+  
